@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>flexbox</title>
+</head>
+<style>
+    body {
+        background-image: url(https://1.bp.blogspot.com/-a7A5DK9PIjQ/XhdzSkOEKSI/AAAAAAAAAAw/tfC6Fjwc3IQEjpCo7Dzj6fCC_3_vvSf5ACLcBGAsYHQ/s1600/fg.jpg);
+        background-repeat: no-repeat;
+        width: auto;
+        height: 5555px;
+        background-size: 100%;
+
+    }
+
+
+
+
+    h1 {
+        color: black;
+        background-color: wheat;
+        border-radius: 10px;
+        margin: auto;
+        padding: 9px 10px 12;
+        border: 3px solid black;
+        text-align: center;
+        font-family: serif;
+        font-style: italic;
+        font-weight: bold;
+
+
+    }
+
+    h1:hover {
+        color: rgb(19, 36, 87);
+        text-decoration: underline;  
+        text-size:
+    }
+
+    .class {
+        height: 44px;
+        width: 100%;
+        border: 3px solid black;
+        display: flex;
+        flex-direction: row;
+        /* //deflut value row */
+        /* flex-direction: column; */
+        /* flex-direction: row-reverse; */
+        flex-wrap: wrap;
+        /* flex-flow: row-reverse wrap; */
+        justify-content: center;
+        /* justify-content: space-evenly; */
+        /* justify-content: space-between;  */
+        /* justify-content: space-around; */
+        /* align-items: center;
+        align-items: flex-end;
+        align-items: stretch; */
+        background: hotpink;
+        border: 3px solid rgb(0, 0, 0);
+        font-family: fantasy;
+        cu
+
+    }
+
+    .item {
+        display: inline block;
+        /* widows: 200px;
+        height: 200px; */
+        /* background-color: tomato; */
+        /* border: 2px solid green; */
+        margin: 10px;
+        padding: 3px;
+
+    }
+
+    .item:hover {
+        color: rgb(217, 228, 233);
+        text-decoration: underline;
+        text-decoration-style: solid;
+    }
+
+    h2 {
+        margin: 0 0 10px;
+        padding: 0;
+        color: #000;
+        font-size: 24px;
+    }
+
+    .box {
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 1200px;
+        transform: translate(-50%, -50%);
+    }
+
+    input {
+        position: relative;
+        display: inline-block;
+        font-size: 20px;
+        box-sizing: border-box;
+        transition: .5s;
+
+    }
+
+    input[type='text'] {
+        background: white;
+        width: 340px;
+        height: 50px;
+        border: none;
+        outline: none;
+        padding: 0 25px;
+        border-radius: 25px 0 0 25px;
+    }
+
+    input[type='submit'] {
+        position: relative;
+        left: -5px;
+        border-radius: 0 25px 25px 0;
+        width: 150px;
+        height: 50px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        background: #ffc107;
+        color: #fff;
+    }
+
+    input[type='submit']:hover {
+        background: #ff5257;
+    }
+</style>
+
+<body>
+    <h1>this flexbox</h1>
+    <div class="class">
+        <div class="item" id="item-1">Home</div>
+        <div class="item" id="item-2">Abount Us </div>
+        <div class="item" id="item-3">Contact Us</div>
+        <div class="item" id="item-4">Follow Us</div>
+    </div>
+    <div class="box">
+        <h2>Search</h2>
+        <form action="">
+            <input type="text" name="" placeholder="type....">
+            <input type="submit" name="" id="" value="Search">
+        </form>
+    </div>
+</body>
+
+</html>
